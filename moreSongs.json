@@ -1,0 +1,33 @@
+{
+   "songs": [
+
+      {
+         "title": "Power and the Passion",
+         "info":
+            {
+              "artist": "Midnight Oil",
+              "album": "10,9,8...",
+              "year": 1982
+            }
+      },
+      {
+         "title": "Like Wow, Wipeout",
+         "info":
+            {
+              "artist": "Hoodoo Gurus",
+              "album": "Mars Needs Guitars",
+              "year": 1985
+            }
+      },
+      {
+        "title": "Blood and Roses",
+        "info":
+            {
+              "artist": "The Smithereens",
+              "album": "Especially for You",
+              "year": 1986
+            }
+      }
+
+   ]
+}

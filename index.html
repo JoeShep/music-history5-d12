@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <script data-main="javascripts/main" src="bower_components/requirejs/require.js"></script>
+  <script type='text/javascript' src='javascripts/compiled.js'></script>
+</head>
+<body>
+  <div class="container">
+    <nav class="row box">
+      <ul class="nav__links">
+        <li><a href="#" title="">View Music</a></li>
+        <li><a href="" title="">Add Music</a></li>
+        <li><a class="last" href="" title="">Profile</a></li>
+      </ul>
+    </nav>
+
+    <main class="uiContainer row">
+
+      <section class="uiContainer__form col-xs-3 box">
+        <div class="uiContainer__form--input col-sm-12">
+          Song length:
+          <input type="range" name="" value="" placeholder="">
+        </div>
+        <div class="uiContainer__form--input col-sm-12">
+          Artist:
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Options
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="uiContainer__form--input col-sm-12">
+          Album:
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Options
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="uiContainer__form--input col-sm-12">
+          Genre:
+          <div class="row">
+            <div class="genre col-xs-12 col-sm-6">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Rock
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Pop
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Blues
+                </label>
+              </div>
+            </div>
+            <div class="genre col-xs-12 col-sm-6">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Jazz
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Classical
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Hip hop
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons col-xs-12">
+          <button class="add-more btn btn-block btn-default">Add more songs</button>
+      </section>
+
+      <section class="uiContainer--wrapper col-xs-9">
+        <div class="uiContainer__song-list box col-sm-11.5">
+          <ul class="song-list">
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

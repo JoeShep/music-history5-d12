@@ -1,0 +1,33 @@
+{
+   "songs": [
+
+      {
+         "title": "Annie Waits",
+         "info":
+            {
+              "artist": "Ben Folds",
+              "album": "Rockin' the Suburbs",
+              "year": 2001
+            }
+      },
+      {
+         "title": "Always Where I Need to Be",
+         "info":
+            {
+              "artist": "The Kooks",
+              "album": "Konk",
+              "year": 2008
+            }
+      },
+      {
+        "title": "Commotion",
+        "info":
+            {
+              "artist": "The Features",
+              "album": "Contrast EP",
+              "year": 2006
+            }
+      }
+
+   ]
+}

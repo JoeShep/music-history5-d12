@@ -1,0 +1,93 @@
+$nav-color: #FFB4B0
+
+html
+  font-size: 10px
+
+.box
+  border: 2px solid black
+  font-size: 1.4rem
+  border-radius: 2px
+
+nav
+  background-color: $nav-color
+  margin-top: 1.5rem
+  margin-bottom: 1.5rem
+
+.nav__links
+  margin-bottom: 0
+  padding-left: 1.5rem
+
+  li
+    display: inline-block
+    padding:
+      top: 1.2rem
+      bottom: 1.2rem
+      left: .2rem
+    width: 8rem
+
+    a
+      display: block
+      border-right: 2px solid #000
+      color: #000
+      text-decoration: none
+
+      &.last
+        border-right: 0
+
+      &:hover
+        color: darken( $nav-color, 20% )
+
+.uiContainer
+  &__form
+    padding: 0
+    padding-bottom: 1rem
+    background-color: #4DD7FA
+
+    &--input
+      padding:
+        top: .75rem
+        bottom: .75rem
+
+    .dropdown-toggle
+      width: 100%
+
+    .genre
+      padding: 0
+      &:first-of-type
+        padding-left: 1.5rem
+
+  &--wrapper
+    padding-right: 0
+
+  &__song-list
+    height: 361px
+    padding-right: 0
+    overflow: scroll
+    background-color: #FEFAC0
+
+    .song-list
+      list-style-type: none
+
+      li
+        margin-bottom: 1rem
+
+      .song-list__item--data
+        padding-left: 0
+
+        li
+          display: inline-block
+          padding-right: 1.25rem
+          padding-left: 1.25rem
+          border-right: 2px solid #000
+
+          &:last-of-type
+            border-right: none
+          &:first-of-type
+            padding-left: 0
+
+      .song-title
+        display: block
+        color: #785616
+        font-size: 2.5rem
+        margin-bottom: .5rem
+
