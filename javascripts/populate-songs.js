@@ -1,12 +1,14 @@
-define(function () {
-    return {
-        getSongs: function (callback = dom.makeSongList) {
-            $.ajax({
-              url: 'songs.json',
-              dataType: "json",
-            }).done(function(JSONObject) {
-              dom.makeSongList(JSONObject.songs);
-            });
-        }
-    };
-});
+"use strict";
+
+let $ = require('jquery');
+
+function getSongs(callback) {
+  $.ajax({
+    url: 'songs.json',
+    dataType: "json",
+  }).done(function(songData) {
+    callback(songData.songs);
+  });
+}
+
+module.exports = getSongs;

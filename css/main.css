@@ -16,11 +16,10 @@ nav {
   padding-left: 1.5rem; }
   .nav__links li {
     display: inline-block;
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
-    padding-left: 0.2rem;
-    width: 8rem; }
+    padding-left: .2rem;
+    width: 9rem; }
     .nav__links li a {
+      line-height: 6rem;
       display: block;
       border-right: 2px solid #000;
       color: #000;
@@ -35,16 +34,18 @@ nav {
   padding-bottom: 1rem;
   background-color: #4DD7FA; }
   .uiContainer__form--input {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem; }
+    padding-top: .75rem;
+    padding-bottom: .75rem; }
   .uiContainer__form .dropdown-toggle {
     width: 100%; }
   .uiContainer__form .genre {
     padding: 0; }
     .uiContainer__form .genre:first-of-type {
       padding-left: 1.5rem; }
+
 .uiContainer--wrapper {
   padding-right: 0; }
+
 .uiContainer__song-list {
   height: 361px;
   padding-right: 0;
@@ -69,6 +70,4 @@ nav {
       display: block;
       color: #785616;
       font-size: 2.5rem;
-      margin-bottom: 0.5rem; }
-
-/*# sourceMappingURL=main.css.map */
+      margin-bottom: .5rem; }

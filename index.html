@@ -2,29 +2,29 @@
 <html>
 <head>
   <title></title>
-  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
   <link rel="stylesheet" href="/css/main.css">
-  <script data-main="javascripts/main" src="bower_components/requirejs/require.js"></script>
-  <script type='text/javascript' src='javascripts/compiled.js'></script>
 </head>
 <body>
   <div class="container">
     <nav class="row box">
-      <ul class="nav__links">
-        <li><a href="#" title="">View Music</a></li>
-        <li><a href="" title="">Add Music</a></li>
-        <li><a class="last" href="" title="">Profile</a></li>
-      </ul>
+      <div class="nav-wrapper">
+        <ul id="nav-mobile" class="left nav__links">
+          <li><a href="#" title="">View Music</a></li>
+          <li><a href="" title="">Add Music</a></li>
+          <li><a class="last" href="" title="">Profile</a></li>
+        </ul>
+      </div>
     </nav>
 
     <main class="uiContainer row">
 
-      <section class="uiContainer__form col-xs-3 box">
-        <div class="uiContainer__form--input col-sm-12">
+      <section class="uiContainer__form col s3 box">
+        <div class="uiContainer__form--input col sm12">
           Song length:
           <input type="range" name="" value="" placeholder="">
         </div>
-        <div class="uiContainer__form--input col-sm-12">
+        <div class="uiContainer__form--input col s12">
           Artist:
           <div class="dropdown">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -39,7 +39,7 @@
             </ul>
           </div>
         </div>
-        <div class="uiContainer__form--input col-sm-12">
+        <div class="uiContainer__form--input col sm12">
           Album:
           <div class="dropdown">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -54,10 +54,10 @@
             </ul>
           </div>
         </div>
-        <div class="uiContainer__form--input col-sm-12">
+        <div class="uiContainer__form--input col s12">
           Genre:
           <div class="row">
-            <div class="genre col-xs-12 col-sm-6">
+            <div class="genre col s12 m6">
               <div class="checkbox">
                 <label>
                   <input type="checkbox" value="">
@@ -77,7 +77,7 @@
                 </label>
               </div>
             </div>
-            <div class="genre col-xs-12 col-sm-6">
+            <div class="genre col s12 m6">
               <div class="checkbox">
                 <label>
                   <input type="checkbox" value="">
@@ -99,17 +99,19 @@
             </div>
           </div>
         </div>
-        <div class="buttons col-xs-12">
+        <div class="buttons col s12">
           <button class="add-more btn btn-block btn-default">Add more songs</button>
       </section>
 
-      <section class="uiContainer--wrapper col-xs-9">
-        <div class="uiContainer__song-list box col-sm-11.5">
+      <section class="uiContainer--wrapper col s9">
+        <div class="uiContainer__song-list box col s12">
           <ul class="song-list">
           </ul>
         </div>
       </section>
     </main>
   </div>
+  <!-- <script type='text/javascript' src='javascripts/compiled.js'></script> -->
+  <script type='text/javascript' src='dist/bundle.js'></script>
 </body>
 </html>

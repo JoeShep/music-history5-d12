@@ -1,12 +1,7 @@
-requirejs(['app']);
+"use strict";
 
-require.config({
-    shim : {
-        "bootstrap" : { "deps" :['jquery'] }
-    },
-    paths: {
-      'jquery': '../bower_components/jquery/dist/jquery.min',
-      'bootstrap': '../bower_components/bootstrap/dist/js/bootstrap.min'
-    }
-});
+let $ = require('jquery'),
+    getSongs = require("./populate-songs"),
+    makeSongList = require("./dom-access");
 
+getSongs(makeSongList);
