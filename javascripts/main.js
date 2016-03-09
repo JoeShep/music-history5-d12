@@ -1,7 +1,12 @@
 "use strict";
 
 let $ = require('jquery'),
-    getSongs = require("./populate-songs"),
-    makeSongList = require("./dom-access");
+    db = require("./db-interaction"),
+    makeSongList = require("./data-interaction");
 
-getSongs(makeSongList);
+db.getSongs(makeSongList);
+
+$(document).on("click", ".delete-btn", function () {
+  console.log("btn clicked", this.id);
+  db.deleteSong(this.id);
+});
