@@ -4,10 +4,11 @@ let $ = require('jquery');
 
 function getSongs(callback) {
   $.ajax({
-    url: 'songs.json',
+    url: 'https://nss-nc02-ng-music.firebaseio.com/songs/.json',
     dataType: "json",
   }).done(function(songData) {
-    callback(songData.songs);
+    console.log("data",songData );
+    callback(songData);
   });
 }
 

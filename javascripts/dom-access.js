@@ -4,16 +4,16 @@ let $ = require('jquery');
 
 function makeSongList(songList) {
 
-  for (var i = 0; i < songList.length; i ++) {
+  for (var song in songList ) {
+    let currentSong = songList[song];
     var $songListItem = $("<li/>", {class: "song-list__item"}),
-        $title = $("<span/>", {class: "song-title"}).text(songList[i].title),
-        $songListData = $("<ul/>", {class: "song-list__item--data"}),
-        $songListDataItem = $("<li/>");
+        $title = $("<span/>", {class: "song-title"}).text(currentSong.title),
+        $songListData = $("<ul/>", {class: "song-list__item--data"});
 
-    for ( var key in songList[i].info ) {
-      console.log(songList[i].info[key]);
-      $songListData.append("<li>" + songList[i].info[key] + "</li>");
-    }
+    $songListData.append(
+      `<li>${currentSong.artist}</li>
+      <li>${currentSong.album}</li>
+      <li>${currentSong.year}</li>`);
 
     $(".song-list").append($songListItem.append($title));
     $(".song-list").append($songListItem.append($songListData));
